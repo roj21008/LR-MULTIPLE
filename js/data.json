@@ -16,7 +16,7 @@
             "name": "Mantenimiento de edificios",
             "services": "Reparaciones, supervisión de sistemas eléctricos e hidráulicos",
             "tel": "+51999999999",
-            "image": "image/mantenimiento.png"
+            "image": "https://roj21008.github.io/LR-MULTIPLE/image/mantenimiento.png"
         },
         {
             "name": "Servicio de mudanzas",
@@ -46,7 +46,7 @@
             "name": "Construcción y remodelaciones",
             "services": "Drywall, ampliaciones, refacción de espacios",
             "tel": "+51999999999",
-            "image": "image/construccion.png"
+            "image": "https://roj21008.github.io/LR-MULTIPLE/image/construccion.png"
         },
         {
             "name": "Limpieza de hogares y oficinas",
@@ -58,13 +58,13 @@
             "name": "Servicio de software y desarrollo web",
             "services": "Páginas web, aplicaciones, soporte técnico",
             "tel": "+51999999999",
-            "image": "image/desarrollo-web.png"
+            "image": "https://roj21008.github.io/LR-MULTIPLE/image/desarrollo-web.png"
         },
         {
             "name": "Instalación y mantenimiento de pisos",
             "services": "Cerámica, parquet, laminados, porcelanato",
             "tel": "+51999999999",
-            "image": "image/pisos.png"
+            "image": "https://roj21008.github.io/LR-MULTIPLE/image/pisos.png"
         },
         {
             "name": "Asesoría y gestión de proyectos",
