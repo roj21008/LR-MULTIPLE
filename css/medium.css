@@ -1,0 +1,166 @@
+@media only screen and (min-width: 35rem) {
+  
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+main{
+
+    width:100;
+    margin:auto}    
+    
+        
+        
+header{    
+    
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%;
+}
+
+nav ul{
+    display: flex; /* Activa el flexbox */
+    justify-content: space-around; /* Distribuye el espacio de manera uniforme entre los elementos */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0;
+    
+    
+  }
+
+    /*css header*/ 
+
+.logo-div{
+    border: rgb(7, 25, 163) solid 1px;
+    width:25%;
+            
+    }
+    /*rep*/
+    
+    /*rep*/
+.logo{
+            
+    width: 100%;
+    
+    } 
+  
+.hero-link {
+    bottom: 30px;
+    left: 30px;
+    font-size: 1.3rem;
+}
+
+.weather {
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 1.6rem;
+    
+}
+
+.weather h2{
+    font-size: 1.5rem;
+}
+
+#current-temp{
+    font-weight: bold;
+    
+}
+.weather img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+    .spotlight {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+}
+
+
+
+    
+/*------------------------------------------------*/     
+/*DISCOVER PAGE*/
+/*DISCOVER PAGE*/
+/*DISCOVER PAGE*/
+/*DISCOVER PAGE*/
+/*DISCOVER PAGE*/
+
+
+.trujillo-images{  /*picture element*/
+display:grid;
+grid-template-columns: 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;  
+grid-gap: 1rem;
+justify-content: center;
+}
+
+/*---------------------------------------------*/
+/*DESIGN FOOTER*/
+.logo-tit-foot{
+    border: solid 1px red;
+    display: flex;
+}
+
+.logo-footer{
+    width: 45%;
+    
+}
+.data{
+    border: solid 4px green;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.footer-title{
+    text-align: left;
+    font-size: 1.15rem;
+}
+.footer-subt{
+    text-align: left;
+        font-size: 0.8rem;
+    }
+    .title-subt{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px black;
+    }
+    .location h2, .location a{
+        font-size: 0.7rem;
+        
+        letter-spacing:0.1rem;
+        
+    }
+.location{
+    border: solid 1px yellow;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .first-par,.separator{
+        display: flex;
+        justify-content: center;     
+        
+        
+    }
+    .info p{
+        margin: auto 0.2rem;
+    }
+.info{
+    border: solid 1px white;
+}
+
+
+
+    }
+    

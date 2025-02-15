@@ -1,0 +1,76 @@
+{
+    "services": [ 
+        {
+            "name": "Pintura y acabados",
+            "services": "Interiores, exteriores, estuco, impermeabilización",
+            "tel": "+51999999999",
+            "image": "image/pintura.png"
+        },
+        {
+            "name": "Gasfitería y tuberías",
+            "services": "Instalación y mantenimiento de cañerías, detección de fugas",
+            "tel": "+51999999999",
+            "image": "image/gasfiteria.png"
+        },
+        {
+            "name": "Mantenimiento de edificios",
+            "services": "Reparaciones, supervisión de sistemas eléctricos e hidráulicos",
+            "tel": "+51999999999",
+            "image": "image/mantenimiento.png"
+        },
+        {
+            "name": "Servicio de mudanzas",
+            "services": "Empaque, transporte, desembalaje",
+            "tel": "+51999999999",
+            "image": "image/mudanzas.png"
+        },
+        {
+            "name": "Cerrajería y seguridad residencial",
+            "services": "Copias de llaves, apertura de puertas, cambio de cerraduras",
+            "tel": "+51999999999",
+            "image": "image/cerrajeria.png"
+        },
+        {
+            "name": "Carpintería",
+            "services": "Muebles, closets, puertas, restauración de madera",
+            "tel": "+51999999999",
+            "image": "image/carpinteria.png"
+        },
+        {
+            "name": "Jardinería y áreas verdes",
+            "services": "Poda, diseño de jardines, sistemas de riego",
+            "tel": "+51999999999",
+            "image": "image/jardineria.png"
+        },
+        {
+            "name": "Construcción y remodelaciones",
+            "services": "Drywall, ampliaciones, refacción de espacios",
+            "tel": "+51999999999",
+            "image": "image/construccion.png"
+        },
+        {
+            "name": "Limpieza de hogares y oficinas",
+            "services": "Alfombras, vidrios, mantenimiento post-obra",
+            "tel": "+51999999999",
+            "image": "image/limpieza.png"
+        },
+        {
+            "name": "Servicio de software y desarrollo web",
+            "services": "Páginas web, aplicaciones, soporte técnico",
+            "tel": "+51999999999",
+            "image": "image/desarrollo-web.png"
+        },
+        {
+            "name": "Instalación y mantenimiento de pisos",
+            "services": "Cerámica, parquet, laminados, porcelanato",
+            "tel": "+51999999999",
+            "image": "image/pisos.png"
+        },
+        {
+            "name": "Asesoría y gestión de proyectos",
+            "services": "Desarrollo y ejecución de expedientes técnicos",
+            "tel": "+51999999999",
+            "image": "image/asesoria.png"
+        }
+    ]
+}

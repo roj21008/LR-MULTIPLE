@@ -1,0 +1,227 @@
+@media only screen and (min-width: 60em){ 
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ 
+ 
+      
+   
+   .facebook, .linkedin{/*LOGO SOCIAL NETWORKS*/
+    width: 25px;
+    /*border-radius: 50%;*/
+    /*margin: 20px;*/
+    
+} 
+
+
+.logo-div{
+  width: 20%;
+}
+
+.logo{
+  width: 100%;
+}
+
+
+nav ul li a{
+ 
+  border-top: none;
+ font-size: 1.1rem;
+}
+/*nav ul li.selected{
+  
+  background-color:#034f55 ;
+ 
+}*/
+
+
+.date-now{
+  display: flex;
+  justify-content: end;
+}
+#hamburgerBtn{
+  display:none;}
+     
+    
+.hero-link {
+  bottom: 40px;
+  left: 40px;
+  font-size: 2rem;
+  padding: 12px 24px;
+}
+
+.weather {
+  width: 200px;
+  top: 30px;
+  right: 30px;
+  padding: 12px 18px;
+  font-size: 2rem;
+}
+
+.weather img {
+  width: 100px;
+  height: 50px;
+}
+
+#current-temp{
+  font-size: 2rem;
+}
+
+.spotlight {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/*---------------------JOIN PAGE-------------------*/
+form label.top input, form label.top select{
+max-width: 15rem;
+}
+
+textarea{
+  width: 60%;
+}
+
+
+/*------------DIRECTORY PAGE---------------*/
+div.cards{
+  
+  
+  
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
+}
+tr{
+  display: table-row-group;
+  height: 4rem;
+  border: 0px;
+  width: 100%;
+  padding: 0.3rem 0;
+}
+/*------------CONTACT PAGE----------------*/
+.contact-container{
+  margin: 1rem auto;
+  width: 95%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.contact-info{
+  display: grid;
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  
+  grid-template-rows:40% 60% ;
+  
+}
+.contact-data{
+  grid-row: 2/3;
+  
+  height: 80%;
+  
+}
+.image-contact{
+  height: 100%;
+  grid-row: 1/2;
+}
+
+.image-contact img{
+  width: 100%;
+  height: 100%;
+}
+
+.form-contact{
+  padding: 0.5rem 0;
+  width: 100%;
+  grid-column: 2;
+  grid-row: 1/3;
+  
+}
+
+
+
+form label.textarea-contact{
+  width: 90%;
+  }
+
+/*---------------------------DESIGN FOOTER--------------------------*/
+.logo-tit-foot{
+  margin: 0 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-footer{
+  width:45%;
+}
+
+
+.data{
+  
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-title{
+  text-align: left;
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-subt{
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+.title-subt{
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+ 
+  
+  
+
+.first-par,.separator{
+  display: flex;
+  justify-content: center;     
+  
+  
+}
+
+.first-par p{
+  font-size: 1.3rem;
+}
+
+
+.info {
+display: flex;
+  
+  justify-content: center;
+  
+  
+}
+
+.location h2, .location a{
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.trujillo-images{  /*picture element*/
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+}
