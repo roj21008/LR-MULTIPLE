@@ -1,4 +1,4 @@
-const requestURL = `https://roj21008.github.io/wdd230/LR-MULTIPLE/js/data.json?t=${new Date().getTime()}`;
+const requestURL = `https://roj21008.github.io/LR-MULTIPLE/js/data.json?t=${new Date().getTime()}`;
 const grid = document.querySelector('.grid');
 let dataRequest;
 
