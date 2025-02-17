@@ -32,7 +32,7 @@ fetch(`https://roj21008.github.io/LR-MULTIPLE/js/data.json?t=${new Date().getTim
             spot.innerHTML = `
                 <h2>${name}</h2>
                 <img src="${image}" alt="${name}" class="spot-img">
-                <a href="https://wa.me/51948895989" target="_blank" class="ws-ppto">COTIZA</a>
+                <a href="https://wa.me/51948895989?text=Hola,%20gracias%20por%20escribirnos.%20Cuéntanos%20más%20sobre%20el%20servicio%20que%20deseas,%20estaremos%20encantados%20de%20ayudarte%20y%20ofrecerte%20la%20mejor%20cotización." target="_blank" class="ws-ppto">COTIZA</a>
             `;
         });
     })

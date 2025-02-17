@@ -35,7 +35,7 @@ function displayCompany(service){
     Services.classList.add("services");
     
     quoteButton.textContent='COTIZA AQUI'
-    quoteButton.href=('https://wa.me/51948895989');
+    quoteButton.href=('https://wa.me/51948895989?text=Hola,%20gracias%20por%20escribirnos.%20Cuéntanos%20más%20sobre%20el%20servicio%20que%20deseas,%20estaremos%20encantados%20de%20ayudarte%20y%20ofrecerte%20la%20mejor%20cotización.');
     quoteButton.target = '_blank';
     quoteButton.classList.add("quote-button");
     
@@ -77,7 +77,7 @@ document.getElementById('table').addEventListener('click', function () {
         services.textContent = c.services;
         
         quoteButton.textContent='COTIZA AQUI'
-    quoteButton.href=('https://wa.me/51948895989');
+    quoteButton.href=('https://wa.me/51948895989?text=Hola,%20gracias%20por%20escribirnos.%20Cuéntanos%20más%20sobre%20el%20servicio%20que%20deseas,%20estaremos%20encantados%20de%20ayudarte%20y%20ofrecerte%20la%20mejor%20cotización.');
     quoteButton.target = '_blank';
     quoteButton.classList.add("quote-button");
         
