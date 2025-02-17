@@ -71,20 +71,20 @@ nav ul li a{
 
 .spotlight {
   grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.spot3{
+  display: block;
 }
 
 
 
 /*---------------------JOIN PAGE-------------------*/
-form label.top input, form label.top select{
-max-width: 15rem;
+
+input[type="submit"] {
+  width: 20%;
+  
 }
-
-textarea{
-  width: 60%;
-}
-
-
 /*------------DIRECTORY PAGE---------------*/
 div.cards{
   
@@ -92,12 +92,26 @@ div.cards{
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   
 }
+tr th, tr td {
+  flex: 1; /* Hace que todas las celdas ocupen el mismo espacio */
+  text-align: center;
+  padding: 0.5rem;
+}
 tr{
-  display: table-row-group;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   height: 4rem;
   border: 0px;
-  width: 100%;
+  width: 100%;  
   padding: 0.3rem 0;
+  border-top: #ff9800 1px solid;
+ 
+}
+.quote-button:hover {
+ 
+  background-color: #ff9800;
+  color: white;
 }
 /*------------CONTACT PAGE----------------*/
 .contact-container{
@@ -178,11 +192,7 @@ form label.textarea-contact{
   margin: 0.5rem;
   font-family: 'Roboto', sans-serif;
 }
-.title-subt{
-  width: 70%;
-  justify-content: center;
-  align-items: center;
-}
+
 
  
   

@@ -13,7 +13,15 @@
         <link rel="stylesheet" href="css/large.css" />
         <link rel="icon" href="logo.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Noto+Serif&family=PT+Serif&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-        
+       
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+        emailjs.init('gALRjyrbjnhOUCglC')
+        </script>
+
+
         
     </head> 
 
@@ -26,11 +34,11 @@
         </div>   
         <nav>
             <ul >
-                <li ><a href="index.html" class="selected" >HOME</a></li>
+                <li ><a href="index.html" >INICIO</a></li>
                 <li><a href="discover.html" >DISCOVERY</a></li>
-                <li><a href="directory.html" >DIRECTORY</a></li>
-                <li><a href="join.html" >JOIN</a></li>
-                <li><a href="contact.html" >CONTACT</a></li>
+                <li><a href="directory.html" >SERVICIOS</a></li>
+                <li><a href="join.html" class="selected" >UNETE</a></li>
+                <li><a href="mision_vision.html" >MISION Y VISION</a></li>
             </ul>
         </nav>
         <div class="whatsapp-mail">
@@ -52,73 +60,78 @@
     <aside></aside>
 </div>
     <main>
-        
-        <form action="thanks.html" method="get" >
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top" >Business position<input type="text" name="title" pattern="[a-zA-Z-_\s]{7,}" title="This field accepts alpha characters, hyphens, and spaces with a minimum of seven characters"></label>
-                
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@mail.com" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="123456789" required></label>
-                <label class="top">Bussines Name* <input type="text" name="bsns_name" required></label>
-            </fieldset>
+        <div class="form-mail-to">
+        <form id="form" >
+            
+            <div class="field">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="field">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" pattern="\+?[0-9]{2}[0-9]{9}" placeholder="+52123456789" required>
 
-            <fieldset>
-                <legend>Membership Level</legend>
-                
-                    <label class="sbs"><input  type="radio" name="audience" value="NP">NP Membership is for non profit organizations and there is no fee.</label>
-                    <label class="sbs"><input  type="radio" name="audience" value="bronze">Bronze Membership | $150</label>
-                    <label class="sbs"><input  type="radio" name="audience" value="silver">Silver Membership | $500</label>
-                    <label class="sbs"><input  type="radio" name="audience" value="golden">Golden Membership | $900</label>
+            </div>
+            <div class="field">
+                <label for="date">Fecha</label>
+                <input type="date" name="date" id="date">
+            </div>
+          
+            <div class="field ">
+                <label>Experiencia (años)</label>
+                <label><input type="number" name="experiencia"  required></label> 
             
-            </fieldset>
-            <fieldset class="description">
-                <label class="top">Bussines Description</label>
-                <textarea  name="bsns_description" rows="10" cols="50" placeholder="Write a brief description of your business"></textarea>
-                
-                <input type="hidden" name="date">
-            </fieldset>
-            
-                <input type="submit" value="Join to The Chamber" class="submitBtn">
-            
+            <div class="field">
+              <label for="servicios">Describa los servicios que ofrece</label>
+              <textarea id="servicios" name="servicios" rows="8" placeholder="Escribe aquí los servicios que ofreces..." required></textarea>
+            </div>
+          
+          
+            <input type="submit" id="button" value="Enviar" >
+          </form>
+        </div> 
        
-    
-        </form>
-        
     </main>
 
-    <footer>
-        <div class="logo-tit-foot">
-            <div class="data">
-                <a href="index.html"><img class="logo-footer" src="image/logo.webp" alt="logo"></a>
-                <div class="title-subt">
-                    <h1 class="footer-title">Opportunities & Solutions Chamber of Commerce</h1>
-                    <h2 class="footer-subt">Mz Q Lote 17 Alan Garcia</h2>
-                    <h2 class="footer-subt">La Esperanza Trujillo</h2>
-                </div>   
-            </div>    
-            <div class="location">
-                <h2>info@opportunitiessol.org</h2>
-                <h2>+51948895989</h2>
-                <a class="maps" href="https://www.google.com/maps/place/C.+7,+Distrito+de+V%C3%ADctor+Larco+Herrera/@-8.0751027,-79.0602613,17z/data=!3m1!4b1!4m5!3m4!1s0x91ad3dd60ceb2fc9:0x7dd9969470b0f14f!8m2!3d-8.0751051!4d-79.0584148" > 📍 Location Map</a>
-                
-            </div>
-        </div>            
-            <hr>       
-        <div class="info">
-            <div class="first-par"><p class="my-info">&copy;2022 Opportunities & Solutions </p><p class="separator">|</p> <p class="my-info"><span>Luis A. Rojas</span></p><p class="separator">|</p><p class="my-info"> WDD 230 Project </p><p class="separator"> | </p></div>
-            <p class="last-modified" id="lastmodified"></p>
+    
+<footer>
+    <div class="logo-tit-foot">
+        <div class="data">
+            <a href="index.html"><img class="logo-footer" src="image/LR-logo.png" alt="logo"></a>
+            <div class="title-subt">
+                <h1 class="footer-title">LR MULTIPLE-SERVICES E.I.R.L.</h1>
+                <h3>"Soluciones rápidas, resultados duraderos."</h3>
+               
+            </div>   
+        </div>    
+        <div class="location">
+            <h2>lrmultipleservices@gmail.com</h2>
+            <h2>+51948895989</h2>
+            <a class="maps" href="https://www.google.com/maps/place/C.+7,+Distrito+de+V%C3%ADctor+Larco+Herrera/@-8.0751027,-79.0602613,17z/data=!3m1!4b1!4m5!3m4!1s0x91ad3dd60ceb2fc9:0x7dd9969470b0f14f!8m2!3d-8.0751051!4d-79.0584148" > 📍 Location Map</a>
+            
         </div>
-    </footer>
+    </div>            
+        <hr>       
+    <div class="info">
+        <p class="last-modified" id="lastmodified"></p>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="image/facebook.png" alt="facebook" class="facebook"></a>
+            <a href="https://pe.linkedin.com/"><img src="image/linkedin.png" alt="linkedin" class="linkedin"></a>
+        </div>   
+    </div>
+</footer>
         <script src="js/last-modified.js"></script>
         <script src="js/windchill.js"></script>
         <script src="js/lazyload.js"></script>
         <script src="js/visit.js"></script>
         <script src="js/data.js"></script>
+        <script src="js/join.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    </body>
-    </html>
-    
+</body>
+</html>
+
     

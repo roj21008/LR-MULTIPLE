@@ -35,7 +35,7 @@ nav ul{
     /*css header*/ 
 
 .logo-div{
-    border: rgb(7, 25, 163) solid 1px;
+    
     width:25%;
             
     }
@@ -79,8 +79,9 @@ nav ul{
 
     .spotlight {
         display: grid;
-        gap: 20px;
+        gap: 10px;
         grid-template-columns: 1fr 1fr;
+        margin: 5px;
 }
 
 
@@ -101,12 +102,28 @@ grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 grid-gap: 1rem;
 justify-content: center;
 }
-
+/*JOIN CSS*/
+.submitBtn{
+    width: 20%;
+    margin-left:2rem;
+}
+.form-mail-to{
+ 
+    width: 50%;
+  
+  }
+  .input{
+    display: flex;
+    flex-direction: row;
+  }
 /*---------------------------------------------*/
 /*DESIGN FOOTER*/
 .logo-tit-foot{
-    border: solid 1px red;
+    
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo-footer{
@@ -114,7 +131,7 @@ justify-content: center;
     
 }
 .data{
-    border: solid 4px green;
+   
     display: flex;
     align-items: center;
 
@@ -129,24 +146,14 @@ justify-content: center;
     text-align: left;
         font-size: 0.8rem;
     }
-    .title-subt{
-        width: 70%;
-        justify-content: center;
-        align-items: center;
-        border: solid 1px black;
-    }
+ 
     .location h2, .location a{
         font-size: 0.7rem;
         
         letter-spacing:0.1rem;
         
     }
-.location{
-    border: solid 1px yellow;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
     .first-par,.separator{
         display: flex;
         justify-content: center;     
@@ -156,11 +163,13 @@ justify-content: center;
     .info p{
         margin: auto 0.2rem;
     }
-.info{
-    border: solid 1px white;
+.location, title.subt {
+     margin: 1rem;
 }
-
-
-
-    }
-    
+.title-subt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}

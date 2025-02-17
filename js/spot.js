@@ -32,7 +32,7 @@ fetch(`https://roj21008.github.io/LR-MULTIPLE/js/data.json?t=${new Date().getTim
             spot.innerHTML = `
                 <h2>${name}</h2>
                 <img src="${image}" alt="${name}" class="spot-img">
-                <a href="https://wa.me/51948895989" target="_blank" class="mail-ppto">COTIZA</a>
+                <a href="https://wa.me/51948895989" target="_blank" class="ws-ppto">COTIZA</a>
             `;
         });
     })

@@ -19,18 +19,12 @@ function displayCompany(service){
     let h2Name =  document.createElement('h2');
     let logo =  document.createElement('img');
     let Services = document.createElement('p');
-    let Telephone = document.createElement('p');  
-    
-    
-
+    let quoteButton = document.createElement('a');
     
     
     h2Name.textContent = service.name;
     Services.textContent = service.services;
-    Telephone.textContent = service.tel;
-   
-
-    
+       
     
 
     logo.setAttribute('src',service.image);
@@ -39,13 +33,18 @@ function displayCompany(service){
     logo.classList.add("logo_img-directory");
     card.classList.add("section_service");
     Services.classList.add("services");
-    Telephone.classList.add("telephone");  
+    
+    quoteButton.textContent='COTIZA AQUI'
+    quoteButton.href=('https://wa.me/51948895989');
+    quoteButton.target = '_blank';
+    quoteButton.classList.add("quote-button");
+    
     
 
     card.appendChild(logo);
     card.appendChild(h2Name);
     card.appendChild(Services)
-    card.appendChild(Telephone)
+    card.appendChild(quoteButton)
     
     
     grid.appendChild(card);
@@ -68,17 +67,25 @@ document.getElementById('table').addEventListener('click', function () {
         let tr = document.createElement('tr');
         let name = document.createElement('th');
         let services = document.createElement('th');
-        let tel = document.createElement('th');
+        let quoteTh = document.createElement('th');
+        let quoteButton = document.createElement('a');
         
 
         name.textContent = c.name;
+        name.style.fontWeight = "bold"; // Texto en negrita
+        name.style.textTransform = "uppercase"; // Convertir texto a mayúsculas
         services.textContent = c.services;
-        tel.textContent = c.tel;
+        
+        quoteButton.textContent='COTIZA AQUI'
+    quoteButton.href=('https://wa.me/51948895989');
+    quoteButton.target = '_blank';
+    quoteButton.classList.add("quote-button");
         
 
         tr.appendChild(name);
         tr.appendChild(services);
-        tr.appendChild(tel);
+        tr.appendChild(quoteTh);
+        quoteTh.appendChild(quoteButton);
         
         
         document.querySelector('table ').appendChild(tr);
