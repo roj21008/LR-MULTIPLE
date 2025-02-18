@@ -285,12 +285,6 @@ picture .hero-img{
 
 
 
-
-
-
-
-
-
 /*------------------------DISCOVER PAGE--------------------------*/
 /*DISCOVER PAGE
 DISCOVER PAGE
@@ -698,9 +692,23 @@ width: 94%;
 
 /*-----------END CSS MAIN----------*/
 
+/*MISION Y VISION*/
 
- 
-
+ .mis-vis{
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  justify-content: space-between;
+ }
+ .mision{
+  
+  border: red solid 1px;
+  margin: 10px;
+ }
+ .vision{
+  border: red solid 1px;
+  margin: 10px;
+ }
 /*------------CSS FOOTER------------*/
 footer{
     display: block;
