@@ -161,6 +161,12 @@ form label.textarea-contact{
   width: 90%;
   }
 
+
+  /*mision y vision*/
+  .mision, .vision {
+    width: 48%; /* Dos columnas en pantallas grandes */
+    margin: 10px 1%;
+}
 /*---------------------------DESIGN FOOTER--------------------------*/
 .logo-tit-foot{
   margin: 0 6rem;

@@ -4,12 +4,14 @@ lastmod.textContent = `Last Modified: ${document.lastModified}`;
 
 /*HAM BUTTON*/ 
 
-function toogleMenu(){
+function toogleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburguerBtn").classList.toggle("open");
+    document.getElementById("hamburgerBtn").classList.toggle("open"); // Aquí corregimos el ID
 }
+
 const x = document.getElementById("hamburgerBtn");
-x.onclick = toogleMenu
+x.onclick = toogleMenu;
+
 
 //date now
 // select the elements to manipulate (output to)

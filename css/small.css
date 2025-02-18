@@ -57,7 +57,9 @@ header{
     width: 100%;
     
   }
-
+  #primaryNav {
+    display: none;
+}
 
   nav ul {
     display: block;
@@ -95,32 +97,37 @@ nav ul {
  
 
 
-nav ul.open{
-    display: block;
-    list-style-type:none;
-    
-    text-align: center;
-    align-items: stretch;
-    
-    padding:0.8rem 0.2px;
-    width: 100%;
-    
- 
+#primaryNav.open {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  padding: 0.8rem 0.2px;
+  width: 100%;
 }
-#hamburgerBtn{
+#hamburgerBtn {
   margin: auto;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
 }
 
-#hamburgerBtn span:nth-child(1) {display:block;}
-#hamburgerBtn span:nth-child(2) {display:none;}
-
-#hamburgerBtn.open span:nth-child(1) {display:none;}
-#hamburgerBtn.open span:nth-child(2) {display:block;}
-
-
-p{
-  font-family: 'IBM Plex Sans', sans-serif;
+#hamburgerBtn span:nth-child(1) {
+  display: block;
 }
+
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
 
 /*-------------------CSS NAV--------------*/
 
@@ -696,19 +703,35 @@ width: 94%;
 
  .mis-vis{
   display: flex;
-  align-items: stretch;
-  flex: 1;
+  flex-wrap: wrap;
   justify-content: space-between;
- }
- .mision{
+  margin: 10px;
+ 
   
-  border: red solid 1px;
-  margin: 10px;
  }
- .vision{
-  border: red solid 1px;
+ .mision, .vision {
+  width: 100%; /* Por defecto en pantallas pequeñas */
   margin: 10px;
- }
+  padding: 20px;
+  background-color: #F77F00;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mision h2, .vision h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.mision p, .vision p {
+  text-align: justify;
+  margin: 10px 0;
+}
+.mision p:nth-child(2), .vision p:nth-child(2) {
+  color: #003049; /* Color para el texto en inglés */
+}
 /*------------CSS FOOTER------------*/
 footer{
     display: block;
@@ -733,26 +756,22 @@ footer{
 }
 .footer-title{
   margin: 0 auto;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   font-family: 'Roboto', sans-serif;  
   text-align: center;
   
 }
 
-.footer-subt{
-  font-family: 'Noto Serif', serif;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  font-weight: lighter;
-  
-  text-align: center;
-}
+
 .location, .title-subt{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.title-subt h3{
+  font-size: 1rem;
 }
 .location h2{
   text-align: center;
@@ -780,7 +799,7 @@ border-radius: 0.5rem;
 }
 
 #lastmodified{
-  font-size: 1.3rem;
+  font-size: 1rem;
   
 }
 .social{

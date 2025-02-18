@@ -116,6 +116,17 @@ justify-content: center;
     display: flex;
     flex-direction: row;
   }
+
+  /*MISION Y VISION*/
+
+  .mision, .vision {
+    width: 48%; /* Dos columnas en pantallas medianas */
+    margin: 10px 1%;
+}
+.mision p:nth-child(2), .vision p:nth-child(2) {
+    
+    font-weight: bold;/* Color para el texto en inglés */
+  }
 /*---------------------------------------------*/
 /*DESIGN FOOTER*/
 .logo-tit-foot{
