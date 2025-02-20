@@ -26,15 +26,12 @@
 
 
 nav ul li a{
- 
   border-top: none;
- font-size: 1.1rem;
+  font-size: 1.1rem;
 }
-/*nav ul li.selected{
-  
-  background-color:#034f55 ;
- 
-}*/
+nav ul li a.selected{
+  transform: scale(1.2);
+}
 
 
 .date-now{
