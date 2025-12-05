@@ -26,21 +26,33 @@ header{
   display: flex; /* Activa el Flexbox */
   flex-direction: column; /* Organiza los elementos en una columna */
   justify-content: center; /* Centra los elementos verticalmente */
-  align-items: center
+  align-items: center;
+  padding: .1rem;
+    gap: 1rem; 
 }
-.logo-div{
-  
- width:50%;
-       
-}
-/*rep*/
 
-/*rep*/
-.logo{
-          
-  width: 100%;
-  
- } 
+
+ .logo-div {
+ 
+  display: flex;
+ flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    
+  width: 6rem;
+    
+}
+
+.logo-title .title {
+    
+  font-size: 1.2rem;
+  margin: 0;
+  color:  #41483a;
+  font-weight: bold;
+} 
 
 /*rep*/
 
@@ -57,7 +69,7 @@ header{
       width: 100%; /* Ocupará todo el ancho en móvil */
       
       
-      border-radius: 5px;
+      
       display: flex;
       justify-content: left; /* Alinear a la izquierda */
   
@@ -70,28 +82,30 @@ nav ul{
   padding: 0;
   display: flex;
   flex-direction: column; /* Asegura que los enlaces estén apilados en móviles */
-  gap: 10px;
+  gap: 2px;
+ 
 }
- nav li{
+/* nav li{
   border-top: #F77F00 1px solid;
  }
-  
+  */
   nav ul li a{
     
     text-decoration: none;
-    color: #034f55;
+    color:  #41483a;
     font-size: 1rem;
     font-weight: bold;
-    padding: 10px;
+    font-size: 1.2rem;
     display: block;
     transition: all 0.3s ease;
     
+     border-bottom: 1px solid  #41483a; 
   }
   
   nav ul li a:hover {
     text-decoration: underline;
     color: white;
-    background-color: #F77F00;
+    background-color: #aa8643;
     border-radius: 5px;
 }
 
@@ -99,7 +113,7 @@ nav ul{
 nav ul li a.selected {
     font-weight: bold;
     color: white;
-    background-color: #F77F00;
+    background-color: #aa8643;
     height: 100%;
 }
 
@@ -167,7 +181,7 @@ date{
   display: flex;
   align-items: center;
   justify-content: space-between; /* Distribuye los elementos */
-  background-color: #034f55;
+  background-color:  #41483a;
   padding: 0.5rem 1rem;
   height: 3rem;
   width: 100%;
@@ -208,17 +222,17 @@ picture .hero-img{
 
 .hero-link{
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  margin: auto;
+    width: 40%;
   background-color: #ff9800;
   color: white;
   padding: 10px 20px;
   font-weight: bold;
-  
   text-decoration: none;
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-
+text-align: center;
 }
 .weather {
   position: absolute;
@@ -268,7 +282,7 @@ picture .hero-img{
 .spot-child h2 {
   text-align: center;
   font-size: 1.2em;
-  background-color: #003049;
+  background-color: #72673e;
   width: 100%;
   color: white;
 }
@@ -279,7 +293,7 @@ picture .hero-img{
   left: 50%;
   width: 30%;
   transform: translateX(-50%);
-  background-color: #ff9800;
+  background-color: #72673e;
   color: white;
   text-decoration: none;
   padding: 10px 15px;
@@ -413,7 +427,7 @@ z-index:1;
 
 /*-----------------JOIN PAGE-----------------*/
 .form-mail-to{
-background-color: #003049;
+background-color: #aa8643;
 width: 100%;
 margin: auto;
 }
@@ -471,26 +485,26 @@ s
   font-size: 2.5rem;
   background-color:white;
   margin: 2px;
-  color: #034f55;
+  color: #aa8643;
   border: solid 1px ;
 
   
 }
 #grid:hover{
-  background-color: #034f55;
+  background-color: #aa8643;
   color: white;
 }
 #table:hover{
-  background-color: #034f55;
+  background-color: #aa8643;
   color: white;
 }
 
 #grid.selected-directory{
-  background-color: #034f55;
+  background-color: #aa8643;
   color: white;
 }
 #table.selected-directory{
-  background-color: #034f55;
+  background-color:#aa8643;
   color: white;
 }
 div.grid{
@@ -531,7 +545,7 @@ img.logo_img-directory:hover{
 .quote-button {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #ff9800;
+  background-color: #72673e;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -565,6 +579,14 @@ tr{
   padding: 0.3rem 0;
   border-top: #ff9800 1px solid;
 
+}
+.grid-or-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;   /* ⭐ Centra los botones horizontalmente */
+  align-items: center;        /* Centra verticalmente */
+  gap: 1rem;                  /* Espacio entre los botones */
+  padding: 1rem 0;            /* Un poco de espacio alrededor */
 }
 .grid-or-list.table-mode td .quote-button {
   display: flex;
@@ -715,7 +737,7 @@ width: 94%;
   width: 100%; /* Por defecto en pantallas pequeñas */
   margin: 10px;
   padding: 20px;
-  background-color: #F77F00;
+background-color: #aa8643;
   color: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -739,18 +761,19 @@ footer{
     display: block;
     justify-content: center;
     text-align: center;
-    background-color: #034f55;
+    background-color:  #72673e;
     margin: 5px auto;
     padding: 1px 10px;
     color: white;
     font-size: 1.1rem;
         
 }
-.logo-footer{
 
-  width:25%;
-  border-radius: 1.5rem;
-  margin: 0.5rem;
+a img.logo-footer{
+
+  width:5rem;
+  
+
 }
 
 .separator{
@@ -794,11 +817,8 @@ footer{
   font-size:1rem;
 }
 
-.data img{
-  margin: 1rem;
-  width: 70%;
-border-radius: 0.5rem;
-}
+
+
 
 #lastmodified{
   font-size: 1rem;

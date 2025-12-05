@@ -12,23 +12,21 @@ main{
     
         
         
-header{    
-    
-    margin: 0;
-    padding: 0;
-    display:flex;
-    justify-content: space-between;
+header {
+    display: flex;
     flex-direction: row;
-    height: 100%;
-}
+    justify-content: space-between; /* BIEN distribuido */
+    align-items: center;
+  }
 
+  nav{
+    width: 70%;
+  }
 nav ul{
-    display: flex; /* Activa el flexbox */
+
     flex-direction: row;
     justify-content: space-around; /* Distribuye el espacio de manera uniforme entre los elementos */
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding por defecto */
-    margin: 0;
+    
    
 }
 
@@ -39,16 +37,16 @@ nav ul{
 
 nav ul li a{
   border-top: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 nav ul li a.selected{
     font-weight: bold;  
-    box-shadow: #ff9800;
-    color: #ff9800;
+    box-shadow: #aa8643;
+    color: #aa8643;
     background-color: white;
     text-decoration: none;
-    text-shadow: 2px 2px 4px #ff9800;
+    text-shadow: 2px 2px 4px #aa8643;
     transform: scale(1.1);
 }
 
@@ -58,19 +56,26 @@ nav ul li a:hover{
  
     /*css header*/ 
 
-.logo-div{
+.logo-div {
+    width: 50%;
     
-    width:25%;
-            
-    }
-    /*rep*/
     
-    /*rep*/
-.logo{
-            
-    width: 100%;
-    
-    } 
+  flex-direction: row; /* Logo y título horizontal */
+}
+
+.logo {
+  
+  width: 6rem;
+  
+}
+
+.logo-title .title {
+  
+  font-size: 2rem;
+  margin: 0;
+ color:  #41483a;
+  font-weight: bold;
+} 
   
 .hero-link {
     bottom: 30px;
@@ -162,7 +167,7 @@ justify-content: center;
 }
 
 .logo-footer{
-    width: 45%;
+    width: 8rem;
     
 }
 .data{

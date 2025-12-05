@@ -16,13 +16,9 @@
 } 
 
 
-.logo-div{
-  width: 20%;
-}
 
-.logo{
-  width: 100%;
-}
+
+
 
 
 nav ul li a{
@@ -107,7 +103,7 @@ tr{
 }
 .quote-button:hover {
  
-  background-color: #ff9800;
+  background-color: #aa8643;
   color: white;
 }
 /*------------CONTACT PAGE----------------*/
