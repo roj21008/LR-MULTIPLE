@@ -1,22 +1,23 @@
-const btn = document.getElementById('button');
+emailjs.init("UxZYFyqEUR3LoSo2t");  // PUBLIC KEY
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+const btn = document.getElementById("button");
 
-   btn.value = 'Enviando...';
+document.getElementById("form").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-   const serviceID = 'default_service';
-   const templateID = 'template_tyq2s1w';
+  btn.value = "Enviando...";
 
-console.log(templateID)
-console.log(serviceID)
-   emailjs.sendForm(serviceID, templateID, this)
+  const serviceID = "service_eictghb";
+  const templateID = "template_tyq2s1w";
+
+  emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Enviando';
-      alert('Correo recibido, te contactaremos en los próximos días!');
-    }, (err) => {
-      btn.value = 'Enviando';
-      alert(JSON.stringify(err));
+      btn.value = "Enviar mensaje";
+      alert("Correo recibido, te contactaremos en los próximos días!");
+      this.reset(); // limpiar formulario
+    })
+    .catch((err) => {
+      btn.value = "Enviar mensaje";
+      alert("Error: " + JSON.stringify(err));
     });
 });
