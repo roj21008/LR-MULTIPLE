@@ -1,4 +1,4 @@
-emailjs.init("UxZYFyqEUR3LoSo2t");  // PUBLIC KEY
+emailjs.init("r3D4M2ZUKs25oIbjR");  // PUBLIC KEY
 
 const btn = document.getElementById("button");
 
